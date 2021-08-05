@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		2452754726BACF8900A07961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452754626BACF8900A07961 /* AppDelegate.swift */; };
 		2452754926BACF8900A07961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452754826BACF8900A07961 /* SceneDelegate.swift */; };
-		2452754B26BACF8900A07961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452754A26BACF8900A07961 /* ViewController.swift */; };
-		2452754E26BACF8900A07961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2452754C26BACF8900A07961 /* Main.storyboard */; };
+		2452754B26BACF8900A07961 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452754A26BACF8900A07961 /* CommentsViewController.swift */; };
+		2452754E26BACF8900A07961 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2452754C26BACF8900A07961 /* Comments.storyboard */; };
 		2452755026BACF8E00A07961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2452754F26BACF8E00A07961 /* Assets.xcassets */; };
 		2452755326BACF8E00A07961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2452755126BACF8E00A07961 /* LaunchScreen.storyboard */; };
+		2452756426BC316700A07961 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452756326BC316700A07961 /* CommentCell.swift */; };
+		2452756626BC327700A07961 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452756526BC327700A07961 /* Comment.swift */; };
+		2452756926BC343D00A07961 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452756826BC343D00A07961 /* NetworkService.swift */; };
+		2452756D26BC477300A07961 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452756C26BC477300A07961 /* CommentNetworkService.swift */; };
+		2452756F26BC4A5600A07961 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452756E26BC4A5600A07961 /* GetCommentResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2452754326BACF8900A07961 /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2452754626BACF8900A07961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2452754826BACF8900A07961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2452754A26BACF8900A07961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2452754D26BACF8900A07961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2452754A26BACF8900A07961 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		2452754D26BACF8900A07961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		2452754F26BACF8E00A07961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2452755226BACF8E00A07961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2452755426BACF8E00A07961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2452756326BC316700A07961 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		2452756526BC327700A07961 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2452756826BC343D00A07961 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2452756C26BC477300A07961 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		2452756E26BC4A5600A07961 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,108 @@
 		2452754526BACF8900A07961 /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				2452754626BACF8900A07961 /* AppDelegate.swift */,
-				2452754826BACF8900A07961 /* SceneDelegate.swift */,
-				2452754A26BACF8900A07961 /* ViewController.swift */,
-				2452754C26BACF8900A07961 /* Main.storyboard */,
-				2452754F26BACF8E00A07961 /* Assets.xcassets */,
-				2452755126BACF8E00A07961 /* LaunchScreen.storyboard */,
-				2452755426BACF8E00A07961 /* Info.plist */,
+				2452755D26BACFB700A07961 /* Application */,
+				2452755E26BAD0CF00A07961 /* Comments */,
+				2452756226BAD15200A07961 /* Supporting files */,
 			);
 			path = "MVC-N";
+			sourceTree = "<group>";
+		};
+		2452755A26BACF9400A07961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2452755B26BACF9900A07961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2452755126BACF8E00A07961 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2452755C26BACF9E00A07961 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2452754626BACF8900A07961 /* AppDelegate.swift */,
+				2452754826BACF8900A07961 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2452755D26BACFB700A07961 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2452755A26BACF9400A07961 /* Model */,
+				2452755B26BACF9900A07961 /* View */,
+				2452755C26BACF9E00A07961 /* Controller */,
+				2452756726BC342500A07961 /* NetworkService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2452755E26BAD0CF00A07961 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				2452756126BAD11000A07961 /* Model */,
+				2452756026BAD10B00A07961 /* View */,
+				2452755F26BAD0FF00A07961 /* Controller */,
+				2452756B26BC474200A07961 /* CommentNetworcService */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		2452755F26BAD0FF00A07961 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2452754A26BACF8900A07961 /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2452756026BAD10B00A07961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2452754C26BACF8900A07961 /* Comments.storyboard */,
+				2452756326BC316700A07961 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2452756126BAD11000A07961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2452756526BC327700A07961 /* Comment.swift */,
+				2452756E26BC4A5600A07961 /* GetCommentResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2452756226BAD15200A07961 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2452754F26BACF8E00A07961 /* Assets.xcassets */,
+				2452755426BACF8E00A07961 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		2452756726BC342500A07961 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				2452756826BC343D00A07961 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		2452756B26BC474200A07961 /* CommentNetworcService */ = {
+			isa = PBXGroup;
+			children = (
+				2452756C26BC477300A07961 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworcService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +229,7 @@
 			files = (
 				2452755326BACF8E00A07961 /* LaunchScreen.storyboard in Resources */,
 				2452755026BACF8E00A07961 /* Assets.xcassets in Resources */,
-				2452754E26BACF8900A07961 /* Main.storyboard in Resources */,
+				2452754E26BACF8900A07961 /* Comments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,21 +240,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2452754B26BACF8900A07961 /* ViewController.swift in Sources */,
+				2452756626BC327700A07961 /* Comment.swift in Sources */,
+				2452754B26BACF8900A07961 /* CommentsViewController.swift in Sources */,
 				2452754726BACF8900A07961 /* AppDelegate.swift in Sources */,
 				2452754926BACF8900A07961 /* SceneDelegate.swift in Sources */,
+				2452756926BC343D00A07961 /* NetworkService.swift in Sources */,
+				2452756F26BC4A5600A07961 /* GetCommentResponse.swift in Sources */,
+				2452756426BC316700A07961 /* CommentCell.swift in Sources */,
+				2452756D26BC477300A07961 /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2452754C26BACF8900A07961 /* Main.storyboard */ = {
+		2452754C26BACF8900A07961 /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2452754D26BACF8900A07961 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		2452755126BACF8E00A07961 /* LaunchScreen.storyboard */ = {
@@ -288,7 +396,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +415,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U48XQQB49;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
